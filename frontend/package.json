@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "tsc && VITE_CJS_IGNORE_WARNING=true vite build",
+    "build": "tsc && VITE_CJS_IGNORE_WARNING=true NODE_OPTIONS=--max-old-space-size=4096 vite build",
     "preview": "vite preview",
     "vercel-build": "npm run build"
   },
