@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import DefectDetectionDashboard from './components/DefectDetectionDashboard';
 import { checkBackendReachable } from './utils/healthCheck';
+import { Voronoi } from '@paper-design/shaders-react';
 
 function App() {
   const [backendStatus, setBackendStatus] = useState<boolean | null>(null);
@@ -21,6 +22,21 @@ function App() {
 
   return (
     <div className="App">
+      <div className="background-container">
+        <Voronoi
+          width="100%"
+          height="100%"
+          colors={["#ffffff"]}
+          colorGlow="#ffffff"
+          colorGap="#000000"
+          stepsPerColor={1}
+          distortion={0.5}
+          gap={0.03}
+          glow={0.8}
+          speed={0.1}
+          scale={0.5}
+        />
+      </div>
       <header className="App-header">
         <h1 className="App-title">Casting Defect Detection</h1>
         <p className="App-description">
@@ -32,9 +48,9 @@ function App() {
           </div>
         )}
       </header>
-      <div className="container">
+      <main className="container">
         <DefectDetectionDashboard />
-      </div>
+      </main>
     </div>
   );
 }

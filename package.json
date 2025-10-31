@@ -9,9 +9,15 @@
     "build:frontend": "cd frontend && bun run build"
   },
   "devDependencies": {
-    "concurrently": "^8.0.0"
+    "concurrently": "^8.2.2"
   },
-  "keywords": ["defect-detection", "casting", "tensorflow", "react", "flask"],
+  "keywords": [
+    "defect-detection",
+    "casting",
+    "tensorflow",
+    "react",
+    "flask"
+  ],
   "author": "Aditya Garud",
   "license": "MIT"
 }
