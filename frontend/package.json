@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "npx playwright-core install-deps"
   },
   "dependencies": {
     "@paper-design/shaders-react": "^0.0.61",

@@ -9,5 +9,13 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      external: []
+    }
+  },
+  resolve: {
+    alias: {
+      // Add any necessary aliases here
+    }
   }
 })
