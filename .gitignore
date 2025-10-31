@@ -67,3 +67,6 @@ backend/.pytest_cache/
 
 # Local development files
 *.local
+
+# Large model files (should be stored with Git LFS)
+*.h5
