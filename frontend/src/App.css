@@ -1,0 +1,98 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: 
+    radial-gradient(circle at 15% 25%, rgba(0, 0, 0, 0.02) 0%, transparent 10%),
+    radial-gradient(circle at 85% 75%, rgba(0, 0, 0, 0.02) 0%, transparent 10%),
+    linear-gradient(to bottom, var(--paper-light) 0%, var(--paper-dark) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(135deg, rgba(0, 0, 0, 0.03) 0%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.03) 100%),
+    repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.01) 0px, rgba(0, 0, 0, 0.01) 1px, transparent 1px, transparent 11px),
+    repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.01) 0px, rgba(0, 0, 0, 0.01) 1px, transparent 1px, transparent 11px);
+  background-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.App-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.App-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--black);
+  letter-spacing: -0.5px;
+}
+
+.App-description {
+  font-size: 1.1rem;
+  color: var(--gray-700);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.backend-status {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
+}
+
+.backend-status.connected {
+  color: #2e7d32;
+  border-color: #c8e6c9;
+}
+
+.backend-status.disconnected {
+  color: #c62828;
+  border-color: #ffcdd2;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .App-title {
+    font-size: 2rem;
+  }
+  
+  .App-description {
+    font-size: 1rem;
+  }
+}

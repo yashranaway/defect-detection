@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+backend/venv/
+backend/venv312/
+backend/.venv/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+backend/*.log
+
+# Runtime data
+backend/pid
+backend*.pid
+
+# Distribution / packaging
+backend/dist/
+backend/build/
+frontend/dist/
+frontend/build/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/venv312/
+backend/venv/
+backend/.venv/
+
+# Testing
+backend/.coverage
+backend/htmlcov/
+backend/.tox/
+backend/.nox/
+backend/.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local development files
+*.local
