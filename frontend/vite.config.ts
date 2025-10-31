@@ -11,6 +11,9 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       external: []
+    },
+    commonjsOptions: {
+      ignoreTryCatch: false,
     }
   },
   resolve: {
