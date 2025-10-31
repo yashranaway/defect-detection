@@ -24,8 +24,8 @@ function App() {
     <div className="App">
       <div className="background-container">
         <Voronoi
-          width="100%"
-          height="100%"
+          width="100vw"
+          height="100vh"
           colors={["#ffffff"]}
           colorGlow="#ffffff"
           colorGap="#000000"
