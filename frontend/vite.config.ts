@@ -11,14 +11,6 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       external: []
-    },
-    commonjsOptions: {
-      ignoreTryCatch: false,
-    }
-  },
-  resolve: {
-    alias: {
-      // Add any necessary aliases here
     }
   }
 })

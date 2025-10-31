@@ -1,28 +1,24 @@
 {
   "name": "defect-detection-dashboard",
-  "module": "index.ts",
-  "type": "module",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && VITE_CJS_IGNORE_WARNING=true NODE_OPTIONS=--max-old-space-size=4096 vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview",
     "vercel-build": "npm run build"
   },
   "dependencies": {
-    "@paper-design/shaders-react": "^0.0.61",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@paper-design/shaders-react": "^0.0.61"
   },
   "devDependencies": {
-    "@types/bun": "latest",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
-    "@vitejs/plugin-react": "^5.1.0",
+    "@vitejs/plugin-react": "^4.2.0",
     "typescript": "^5.9.3",
-    "vite": "^7.1.12"
-  },
-  "resolutions": {
-    "rollup": "4.24.0"
+    "vite": "^5.0.0"
   }
 }
